@@ -1,0 +1,102 @@
+
+h1 {
+	color: white;
+}
+
+body { 
+	overflow-y: hidden;
+	padding: 20px 40px;
+
+}
+
+h3 {
+		margin-top: 0px;
+}
+
+
+#page-blog {
+	background-color: lightblue;
+	margin: 50pX;
+	/*border: 3px solid red;*/
+	padding: 10px;
+	background-Color:rgba(255,255,255,0.5)
+
+}
+
+#enter-photo {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.meta {
+	background-color:brown ;
+}
+
+
+.gallery-illu {
+		background-image: url("illu/Corkboard.jpg");
+		width: 90%; 
+		margin-right: auto; margin-left: auto; 
+		overflow-y: scroll;
+		height: 80vh;
+	} 
+
+
+.image1 {
+display: inline-block;
+padding: 20px;
+border:0px solid;
+margin-bottom: 20px
+}
+
+	.image1 a{ 
+		display: inline-block;
+	}
+
+
+ 		.hand-t { 
+ 			width: auto;
+   	 		height: 200PX;
+ 			transform: rotate(-5deg);
+ 		}
+
+		.rabbit-t {     
+			width: 200px;
+    		height: auto;
+			transform: rotate(10deg); 
+		}
+
+
+		.paper-t {     
+				width: auto;
+   				height: 200PX;
+ 				transform: rotate(-5deg);  
+ 		}
+
+
+ 		.book-cover-t {     
+				width: auto;
+   				height: 200PX;
+ 				transform: rotate(3deg);  
+ 		}
+
+ 		.death-punk-t {     
+				width: auto;
+   				height: 200PX;
+ 				transform: rotate(-5deg);  
+ 		}
+
+ 		.DocHolliday-t {     
+				width: 200px;
+   				height: auto;
+ 				transform: rotate(-5deg);  
+ 		}
+
+ 		.zodiac-t {     
+				width: 200px;
+   				height: auto;
+ 				transform: rotate(-5deg);  
+ 		}
