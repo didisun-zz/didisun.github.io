@@ -15,13 +15,46 @@ h3 {
 
 
 #page-blog {
-	background-color: lightblue;
-	margin: 50pX;
-	/*border: 3px solid red;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+	flex-direction: column;
 	padding: 10px;
-	background-Color:rgba(255,255,255,0.5)
 
 }
+
+
+.navi-float {
+		padding: 0px 250px 7px;
+	
+}
+
+.navi-float a{
+	float: left;
+   	width: 25%;
+   	text-align: center;
+
+}
+
+
+.navi {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+
+}
+
+.navi a{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	display: inline-block;
+	padding: 0px 20px ;
+}
+
+
 
 #enter-photo {
 	display: flex;
@@ -100,3 +133,42 @@ margin-bottom: 20px
    				height: auto;
  				transform: rotate(-5deg);  
  		}
+
+.navi-pic {
+	position: static;
+	width: 900px
+	height: 600px;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+	background-color: lightblue;
+	padding: 10px;
+
+}
+
+
+ 	.board-img {
+ 			position: relative;
+ 			top: 10px;
+ 			left: 10px;
+ 	}
+
+ 	 	.girl-img {
+ 			position: relative;
+ 			top: 20px;
+ 			left: 200px;
+
+ 	}
+
+ 	 	.mac-img {
+ 			position: relative;
+ 			top: 20px;
+ 			left: 10px;
+ 	}
+
+ 	 	.table-img {
+ 			position: relative;
+ 			top: 40px;
+ 			left: 20px;
+ 	}
