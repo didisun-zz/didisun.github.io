@@ -14,6 +14,10 @@
 
   <div class="gallery-illu">
 
+<div id="test-popup" class="white-popup mfp-hide">
+  Popup content
+</div>
+
 
    <div class="image1" > <a href="illu/hand.jpg"><img src="illu/hand.jpg" alt="hand" class="hand-t"></a> </div> 
    
@@ -33,6 +37,7 @@
 
 
   <!-- <script src="path/to/lightbox-plus-jquery.min.js"></script> --> 
+<a href="#test-popup" class="open-popup-link">Show inline popup</a>
 
 
   </body>
@@ -56,6 +61,13 @@
   
   });
 
+</script>
+
+<script> 
+    $('.open-popup-link').magnificPopup({
+      type:'ajax',
+      midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    }); 
 </script>
 
 </html>
