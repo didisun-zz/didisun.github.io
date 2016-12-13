@@ -1,11 +1,14 @@
 
 h1 {
-	color: white;
+	color: black;
+	display: flex;
+	justify-content: center;
 }
 
 body { 
 	overflow-y: hidden;
 	padding: 20px 40px;
+	font-family: Courier, Monaco, monospace;
 
 }
 
@@ -21,13 +24,14 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
 	flex-direction: column;
-	padding: 10px;
+	padding: 0px;
+	margin: 20PX;
 
 }
 
 
 .navi-float {
-		padding: 0px 250px 7px;
+		padding: 0px 250px 30px;
 	
 }
 
@@ -54,18 +58,37 @@ h3 {
 	padding: 0px 20px ;
 }
 
+.navi-pic {
+  justify-content: center;
+  align-items: center;
+}
 
 
 #enter-photo {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
-	min-height: 100vh;
+  position: relative;
+  display: block;
+  justify-content: center;
+  margin-top: 60px;
 }
 
-.meta {
-	background-color:brown ;
+.door-img{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+	margin-top: 30px;
+  transform: translate(-52%, 0%);
+	}
+
+.door-img:hover { border:5px solid #83cead;}
+
+
+.gallery-des {
+		background-color: lightgrey;
+		width: 90%; 
+		margin-right: auto; margin-left: auto; 
+		overflow-y: scroll;
+		height: 80vh;
+		display: block;
 }
 
 
@@ -75,20 +98,25 @@ h3 {
 		margin-right: auto; margin-left: auto; 
 		overflow-y: scroll;
 		height: 80vh;
+		display: block;
 	} 
-
 
 .image1 {
 display: inline-block;
 padding: 20px;
 border:0px solid;
-margin-bottom: 20px
+margin-bottom: 20px;
 }
 
 	.image1 a{ 
 		display: inline-block;
 	}
 
+.image1:hover {
+	 			transform: rotate(-5deg);
+
+
+}
 
  		.hand-t { 
  			width: auto;
@@ -96,12 +124,30 @@ margin-bottom: 20px
  			transform: rotate(-5deg);
  		}
 
+
+ 		#hand-popup {
+			  position: relative;
+			  background: #FFF;
+			  padding: 20px;
+			  width: auto;
+			  max-width: 500px;
+			  margin: 20px auto;
+		}		
+
 		.rabbit-t {     
 			width: 200px;
     		height: auto;
 			transform: rotate(10deg); 
 		}
 
+#rabbit-popup {
+			  position: relative;
+			  background: #FFF;
+			  padding: 20px;
+			  width: auto;
+			  max-width: 500px;
+			  margin: 20px auto;
+		}		
 
 		.paper-t {     
 				width: auto;
@@ -135,40 +181,95 @@ margin-bottom: 20px
  		}
 
 .navi-pic {
-	position: static;
-	width: 900px
-	height: 600px;
+  position: relative;
+  height: 500px;
+  width: 800px;
+  margin: auto;
 	display: flex;
-	flex-direction: row;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
 	background-color: lightblue;
 	padding: 10px;
-
 }
 
+    .table-img {
+      position: absolute;
+ 			top: 320px;
+ 			left: 50px;
+  		}
 
- 	.board-img {
- 			position: relative;
- 			top: 10px;
- 			left: 10px;
- 	}
+ 		.board-img {
+ 			height: 209px;
+ 	 		width: 160px;
+ 	 		background-position: center top;
+			background-repeat: no-repeat;
+ 	 		background-image: url('sketch/board1.png');
+ 			position: absolute;
+ 			top: 70px;
+ 			left: 70px;
+ 		}
+
+ 		.board-img:hover {
+ 			background-image: url('sketch/board2.png')
+ 		}
 
  	 	.girl-img {
- 			position: relative;
- 			top: 20px;
- 			left: 200px;
+ 	 		height: 200px;
+ 	 		width: 200px;
+ 	 		background-position: center top;
+			background-repeat: no-repeat;
+ 	 		background-image: url('sketch/girl1.png');
+ 			position: absolute;
+ 			top: 160px;
+ 			left: 270px;
 
- 	}
+ 		}
+
+ 		.girl-img:hover {
+ 			background-image: url('sketch/girl2.png')
+ 		}
+
+ 		.girl-text:hover {
+	 			 background-color: lightyellow;
+				 color: lightblue;
+		}
 
  	 	.mac-img {
- 			position: relative;
- 			top: 20px;
- 			left: 10px;
+ 	 		height: 100px;
+ 	 		width: 200px;
+ 	 		background-position: center top;
+			background-repeat: no-repeat;
+ 	 		background-image: url('sketch/mac1.png');
+ 			position: absolute;
+ 			top: 278px;
+ 			left: 420px;
  	}
 
- 	 	.table-img {
- 			position: relative;
- 			top: 40px;
- 			left: 20px;
- 	}
+ 		.mac-img:hover {
+ 		background-image: url('sketch/mac2.png')
+
+ 		}
+
+
+
+	.about-me-box {
+		position: relative;
+		justify-content: center;
+		border: 1px solid;
+		width: 350px;
+		height: 700px
+		margin: 300px;
+	 	 left: 50%;
+		margin-top: 150px;
+ 		 transform: translate(-30%, 0%);
+ 		 padding: 10px;
+	}
+
+
+footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+}
