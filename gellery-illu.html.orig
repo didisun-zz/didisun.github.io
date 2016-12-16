@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hi there</title>
+    <link rel="stylesheet" href="styles.css" /> 
+	  <link rel="icon" type="image/ico" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  </head>
+  <body>
+
+
+  <h3>illustration gallery</h3>
+
+  <div class="gallery-illu">   
+
+
+
+   <div class="image1" >
+   <a href="#test-popup" class="open-popup-link">
+   <img src="illu/hand.jpg" alt="hand" class="hand-t"></a></div>
+
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+   <div class="image1" > <a href="illu/hand.jpg"><img src="illu/hand.jpg" alt="hand" class="hand-t"></a> </div> 
+   
+  <div class="image1" ><a href="magnific-popup/contact.html" id="rabbit-popup"><img src="illu/rabbit.jpg" alt="rabbit" class="rabbit-t"></a></div>
+=======
+  <div class="image1" >
+  <a href="#test-popup2" class="open-popup-link">
+  <img src="illu/rabbit.jpg" alt="rabbit" class="rabbit-t"></a></div>
+>>>>>>> Stashed changes
+=======
+  <div class="image1" >
+  <a href="#test-popup2" class="open-popup-link">
+  <img src="illu/rabbit.jpg" alt="rabbit" class="rabbit-t"></a></div>
+>>>>>>> Stashed changes
+
+    <div class="image1" > <a href="illu/paper-cut.jpg"><img src="illu/paper-cut.jpg" alt="paper-cut" class="paper-t"></a></div>
+
+
+       <div class="image1" > <a href="illu/book-cover.jpg"><img src="illu/book-cover.jpg" alt="book-cover" class="book-cover-t"></a></div>
+       
+       <div class="image1" ><a href="illu/death-punk.jpg"><img src="illu/death-punk.jpg" alt="death-punk.jpg" class="death-punk-t"></a></div>
+       
+      <div class="image1" > <a href="illu/DocHolliday.jpg"><img src="illu/tumb/DocHolliday-t.jpg" alt="DocHolliday" class="DocHolliday-t"></a></div>
+       
+       <div class="image1" ><a href="illu/zodiac.gif"><img src="illu/tumb/zodiac-t.jpg" alt="zodiac" class="zodiac-t"></a></div> 
+  </div>
+
+
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  <!-- <script src="path/to/lightbox-plus-jquery.min.js"></script> --> 
+<a href="#test-popup" class="open-popup-link">Show inline popup</a>
+=======
+  <!-- here starts the html popups -->
+=======
+  <!-- here starts the html popups -->
+
+
+<div id="test-popup" class="white-popup mfp-hide">
+   <h2>hellooo</h2>
+   <p>this is an example for an comics</p>
+   <img src="illu/hand.jpg" alt="hand" class="hand-image">
+   <h2>and again</h2>
+    <p>and this is another example for an comics</p>
+   <img src="illu/hand.jpg" alt="hand" class="hand-image">
+    </div>
+
+    <div id="test-popup2" class="white-popup mfp-hide">
+   <h2>hellooo</h2>
+   <p>this is an example for an comics</p>
+   <img src="illu/rabbit.jpg" alt="hand" class="hand-image">
+   <h2>and again</h2>
+    <p>and this is another example for an comics</p>
+   <img src="illu/rabbit.jpg" alt="hand" class="hand-image">
+    </div>
+
+
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+  <!--   <script src="./jquery-3.1.1.min.js"></script> -->
+>>>>>>> Stashed changes
+
+
+<div id="test-popup" class="white-popup mfp-hide">
+   <h2>hellooo</h2>
+   <p>this is an example for an comics</p>
+   <img src="illu/hand.jpg" alt="hand" class="hand-image">
+   <h2>and again</h2>
+    <p>and this is another example for an comics</p>
+   <img src="illu/hand.jpg" alt="hand" class="hand-image">
+    </div>
+
+    <div id="test-popup2" class="white-popup mfp-hide">
+   <h2>hellooo</h2>
+   <p>this is an example for an comics</p>
+   <img src="illu/rabbit.jpg" alt="hand" class="hand-image">
+   <h2>and again</h2>
+    <p>and this is another example for an comics</p>
+   <img src="illu/rabbit.jpg" alt="hand" class="hand-image">
+    </div>
+>>>>>>> Stashed changes
+
+
+  </body>
+
+    <footer>
+    <p>back to my <a href="index.html">room</a></p>
+
+  </footer>
+
+<<<<<<< Updated upstream
+  <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<!--   <script src="./jquery-3.1.1.min.js"></script> -->
+=======
+  <script> 
+      $('.open-popup-link').magnificPopup({
+        type:'inline',
+        midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+      }); 
+  </script>
+</body>
+ <footer>
+    <p>back to my <a href="index_2.html">room</a></p>
+  </footer>
+ 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+
+  <!-- Magnific Popup core JS file -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="magnific-popup/jquery.magnific-popup.js"></script>
+  <script type="text/javascript">
+    
+  $(document).ready(function() {
+  
+    $('.gallery-illu').magnificPopup({ delegate: 'a', type:'image'});
+  
+  });
+
+</script>
+
+<script> 
+    $('.open-popup-link').magnificPopup({
+      type:'ajax',
+      midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    }); 
+</script>
+
+</html>
+=======
+
+</html>
+>>>>>>> Stashed changes

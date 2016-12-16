@@ -228,12 +228,21 @@ margin-bottom: 20px;
 
  		.girl-img:hover {
  			background-image: url('sketch/girl2.png')
- 		}
+ 		} 
 
  		.girl-text:hover {
 	 			 background-color: lightyellow;
 				 color: lightblue;
 		}
+
+		.active-img {
+ 			background-image: url('sketch/girl2.png')
+		}
+
+		.active-text {
+			background-color: lightyellow;
+				 color: lightblue;
+		}	
 
  	 	.mac-img {
  	 		height: 100px;
@@ -266,6 +275,23 @@ margin-bottom: 20px;
  		 padding: 10px;
 	}
 
+
+	.white-popup { 
+		  position: relative;
+		  background: #FFF;
+		  padding: 20px;
+		  width: auto;
+		  max-width: 500px;
+		  margin: 20px auto;
+		}
+
+		.hand-image {
+			display: flex;
+		 	width: 400px;
+   	 		height: auto;
+			justify-content: center;
+
+   	 		 }
 
 footer {
    position:absolute;

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <head>
+    <meta charset="utf-8">
+    <title>Adì</title>
+	<link rel="icon" type="image/ico" href="assets/favicon.ico" />
+	<link rel="stylesheet" href="styles.css" /> 
+  </head>
+ 
+  <body>
+  <div>
+  	<div id="page-blog">
+
+  <div class="navi"><nav>
+    <a href="about-me.html" class="girl-text">about me</a>
+    <a href="gellery-illu.html">illustrations</a> 
+    <a href="design-gallery.html">graphic designs</a> 
+    <a href="contact.html">contact</a> 
+</nav> </div> 
+
+</div>
+
+<!--
+<ul class="navi-float">
+    <a href="about-me.html" class="about-me-text">about me</a>
+    <a href="gellery-illu.html">illustrations</a> 
+    <a href="index.html">graphic designs</a> 
+    <a href="index.html">contact</a> 
+</ul> 
+-->
+
+<div class="navi-pic"><nav>
+    <img src="sketch/table.png" class="table-img">
+
+    <a href="design-gallery.html" class="mac-img"></a> 
+
+    <a href="about-me.html" class="girl-img"></a> 
+
+    <a href="gellery-illu.html" class="board-img"></a> 
+
+    </div> 
+
+</nav> 
+
+
+</div>
+  </body>
+
+  <footer>
+    <p> builded and designed: <a href="mailto:didiaviram@gmail.com">Adì Aviram</a></p>
+  </footer>
+
+  <script src="jquery-3.1.1.min.js"></script>
+
+ <script type="text/javascript" >
+   $('.girl-text').hover(function() {
+     $('.girl-img').addClass('active-img');
+}, function() {
+     $('.girl-img').removeClass('active-img');
+});
+
+ </script>
+  <script type="text/javascript" >
+   $('.girl-img').hover(function() {
+     $('.girl-text').addClass('active-text');
+}, function() {
+     $('.girl-text').removeClass('active-text');
+});
+
+ </script>
+
+
+</html>
