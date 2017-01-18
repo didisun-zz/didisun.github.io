@@ -92,6 +92,35 @@ h3 {
 }
 
 
+
+	.popupimga { 
+			width: 400px;
+    		height: auto;
+			display: block;
+			margin: 0 auto;			
+ 		}
+
+	.popupimga2 { 
+			width: 500px;
+    		height: auto;
+			display: block;
+			margin: 0 auto;			
+ 		}
+
+	.popupimga3 { 
+			width: 350px;
+    		height: auto;
+			display: block;
+			margin: 0 auto;			
+ 		}
+
+
+ 	  .popuptext {
+ 	  	margin: 10px 10px ;
+ 	  	font-size: 12px;
+ 	  }
+
+
 .gallery-illu {
 		background-image: url("illu/Corkboard.jpg");
 		width: 90%; 
@@ -100,6 +129,7 @@ h3 {
 		height: 80vh;
 		display: block;
 	} 
+
 
 .image1 {
 display: inline-block;
@@ -119,9 +149,10 @@ margin-bottom: 20px;
 }
 
  		.hand-t { 
- 			width: auto;
-   	 		height: 200PX;
- 			transform: rotate(-5deg);
+			width: 145px;
+    		height: auto;
+			transform: rotate(6deg);
+			margin-top: 20px;
  		}
 
 
@@ -132,6 +163,7 @@ margin-bottom: 20px;
 			  width: auto;
 			  max-width: 500px;
 			  margin: 20px auto;
+			  overflow-y: scroll;
 		}		
 
 		.rabbit-t {     
@@ -164,9 +196,16 @@ margin-bottom: 20px;
 
  		.death-punk-t {     
 				width: auto;
-   				height: 200PX;
+   				height: 170PX;
  				transform: rotate(-5deg);  
  		}
+
+ 		.magazine-t {     
+				width: 160px;
+   				height: auto;
+ 				transform: rotate(5deg);  
+ 		}
+
 
  		.DocHolliday-t {     
 				width: 200px;
@@ -177,6 +216,12 @@ margin-bottom: 20px;
  		.zodiac-t {     
 				width: 200px;
    				height: auto;
+ 				transform: rotate(5deg);  
+ 		}
+
+ 		.iur-t {     
+				width: auto;
+   				height: 200PX;
  				transform: rotate(-5deg);  
  		}
 
@@ -283,6 +328,8 @@ margin-bottom: 20px;
 		  width: auto;
 		  max-width: 500px;
 		  margin: 20px auto;
+
+
 		}
 
 		.hand-image {
