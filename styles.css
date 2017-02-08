@@ -71,6 +71,7 @@ h3 {
   margin-top: 60px;
 }
 
+
 .door-img{
   position: absolute;
   top: 90%;
@@ -234,7 +235,8 @@ margin-bottom: 20px;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-	background-color: lightblue;
+	background-color: #FDFCDC;
+	border: 5px solid #FFE4C4;
 	padding: 10px;
 }
 
@@ -246,33 +248,56 @@ margin-bottom: 20px;
 
  		.board-img {
  			height: 209px;
- 	 		width: 160px;
+ 	 		width: 220px;
  	 		background-position: center top;
 			background-repeat: no-repeat;
- 	 		background-image: url('sketch/board1.png');
+ 	 		background-image: url('sketch/design/board4.png');
  			position: absolute;
  			top: 70px;
  			left: 70px;
  		}
 
  		.board-img:hover {
- 			background-image: url('sketch/board2.png')
+ 			background-image: url('sketch/design/board2.gif')
  		}
 
+
+ 		.phone-img {
+ 			height: 70px;
+ 	 		width: 90px;
+ 	 		background-position: center top;
+			background-repeat: no-repeat;
+ 	 		background-image: url('sketch/design/phone1.png');
+ 			position: absolute;
+ 			top: 330px;
+ 			left: 150px;
+	
+				}
+
+		.phone-img:hover {
+			background-image: url('sketch/design/phone2.gif');
+		}			
+
+		.active-img-phone {
+ 			background-image: url('sketch/design/phone2.gif')
+		}
+
+
  	 	.girl-img {
- 	 		height: 200px;
+ 	 		height: 220px;
  	 		width: 200px;
  	 		background-position: center top;
 			background-repeat: no-repeat;
- 	 		background-image: url('sketch/girl1.png');
+ 	 		background-image: url('sketch/design/girl1.png');
  			position: absolute;
  			top: 160px;
  			left: 270px;
 
  		}
 
+
  		.girl-img:hover {
- 			background-image: url('sketch/girl2.png')
+ 			background-image: url('sketch/design/girl2.png')
  		} 
 
  		.girl-text:hover {
@@ -280,8 +305,12 @@ margin-bottom: 20px;
 				 color: lightblue;
 		}
 
-		.active-img {
- 			background-image: url('sketch/girl2.png')
+		.active-img-girl {
+ 			background-image: url('sketch/design/girl2.png')
+		}
+
+		.active-img-board {
+ 			background-image: url('sketch/design/board2.gif')
 		}
 
 		.active-text {
@@ -290,22 +319,25 @@ margin-bottom: 20px;
 		}	
 
  	 	.mac-img {
- 	 		height: 100px;
+ 	 		height: 110px;
  	 		width: 200px;
  	 		background-position: center top;
 			background-repeat: no-repeat;
- 	 		background-image: url('sketch/mac1.png');
+ 	 		background-image: url('sketch/design/mac1.png');
  			position: absolute;
  			top: 278px;
  			left: 420px;
  	}
 
  		.mac-img:hover {
- 		background-image: url('sketch/mac2.png')
+ 		background-image: url('sketch/design/mac2.png')
+
 
  		}
-
-
+ 		
+ 		.active-img-mac {
+ 			background-image: url('sketch/design/mac2.png')
+		}
 
 	.about-me-box {
 		position: relative;
