@@ -9,6 +9,7 @@ body {
 	overflow-y: hidden;
 	padding: 20px 40px;
 	font-family: Courier, Monaco, monospace;
+	height: 100vh;
 
 }
 
@@ -28,7 +29,6 @@ h3 {
 	margin: 20PX;
 
 }
-
 
 .navi-float {
 		padding: 0px 250px 30px;
@@ -64,33 +64,31 @@ h3 {
 }
 
 
+.enterhl {
+	margin: 0;
+}
+
+.bodyenter {
+	margin: 0;
+	padding: 0;
+}
+
 #enter-photo {
+ display: flex;
   position: relative;
-  display: block;
   justify-content: center;
-  margin-top: 60px;
+ align-items: center; 
+ flex-direction: column;
+ height: 100vh ;
+
 }
 
 
 .door-img{
-  position: absolute;
-  top: 90%;
-  left: 50%;
 	margin-top: 30px;
-  transform: translate(-52%, 0%);
 	}
 
 .door-img:hover { border:5px solid #83cead;}
-
-
-.gallery-des {
-		background-color: lightgrey;
-		width: 90%; 
-		margin-right: auto; margin-left: auto; 
-		overflow-y: scroll;
-		height: 80vh;
-		display: block;
-}
 
 
 
@@ -109,10 +107,23 @@ h3 {
  		}
 
 	.popupimga3 { 
+
 			width: 350px;
     		height: auto;
-			display: block;
+			display: inline-flex;
 			margin: 0 auto;			
+ 		}
+
+.popupimga4 { 
+			width: 50%;
+    		height: auto;
+			display: inline-flex;
+			margin: 0 auto;			
+ 		}
+
+.popupimga5 { 
+			margin: 0 auto;	
+			display: inline;
  		}
 
 
@@ -121,6 +132,27 @@ h3 {
  	  	font-size: 12px;
  	  }
 
+.space { width: 0px;
+ background-color: blue; } 	  
+
+.photocenter {
+}
+
+.raw img{
+	margin: 0 auto;
+	display: block;
+}
+
+.raw2 img{
+	display: inline;
+}
+
+.raw2 {
+	padding-bottom: 40px; 
+  display: flex;
+  align-items: center}
+
+}
 
 .gallery-illu {
 		background-image: url("illu/Corkboard.jpg");
@@ -134,9 +166,10 @@ h3 {
 
 .image1 {
 display: inline-block;
-padding: 20px;
+margin: 20px;
 border:0px solid;
-margin-bottom: 20px;
+margin-bottom: 40px;
+transition: all 0.30s ease-in-out;
 }
 
 	.image1 a{ 
@@ -144,7 +177,52 @@ margin-bottom: 20px;
 	}
 
 .image1:hover {
-	 			transform: rotate(-5deg);
+	 			/*transform: rotate(-8deg);*/
+	 			animation: rotatediv 0.8s ;
+
+
+			}
+
+ .image1:hover img {
+
+	 }
+
+	 .imagehover1 {
+	 			
+   				height: 170PX;
+ 				transform: rotate(-5deg);  
+ 				width: 200px;
+
+	 }
+
+	 .imagehover1 img {
+	 	position: relative;
+	 	width: 100%; 
+	 	height: 100%;
+	 	display: block; 
+	 	z-index: -1;
+
+	 }
+
+	 .imagehover1:hover {	 			
+	 	box-shadow: inset 0px 0px 0px 5px #afffcc;
+
+	 }
+
+
+
+
+@keyframes rotatediv {
+	0% {
+		transform: rotate(0deg); 
+	}
+
+	50% {
+		transform: rotate(-8deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
 
 
 }
@@ -235,10 +313,29 @@ margin-bottom: 20px;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-	background-color: #FDFCDC;
-	border: 5px solid #FFE4C4;
+	/* background-color: #FDFCDC; 
+	border: 5px solid #FFE4C4; */
 	padding: 10px;
 }
+
+@media screen and (max-width:600px) {
+
+	body {
+		padding: 0px;
+		margin: 0px; 
+	}
+ a, p  { font-size: 14px; }
+
+ .navi-pic {
+ 	  width: 380px;
+ 	  border: none;
+  	  margin: 4px;
+ }
+
+
+
+}
+
 
     .table-img {
       position: absolute;
@@ -339,6 +436,28 @@ margin-bottom: 20px;
  			background-image: url('sketch/design/mac2.png')
 		}
 
+
+
+@media screen and (max-width: 400px) {
+	
+	.table-img, .phone-img, .girl-img, .board-img , .mac-img {
+    -webkit-transform: scale(0.5); 
+    position: absolute;
+		left: -20px;
+	}
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+	#page-blog {margin-top: 0;}
+
+	.navi a { margin-top: 10px; }
+}
+
+
+
 	.about-me-box {
 		position: relative;
 		justify-content: center;
@@ -371,6 +490,102 @@ margin-bottom: 20px;
 			justify-content: center;
 
    	 		 }
+
+#design_body {
+	background-color: gray;
+}
+
+.gallery-des {
+		font-family: Tahoma;
+		color: white;
+		text-shadow: 1px 1px black;
+		background: url('design/desktop.jpg') no-repeat;
+    	background-size: cover;
+		border-style: solid;
+        border-width: 27px;
+        border-color: black;
+		width: 90%; 
+		max-width: auto;
+		max-height: 530px;
+		margin-right: auto; margin-left: auto; 
+		overflow-y: scroll;
+		height: 80vh;
+		display: block;
+		/* 
+				background-image: url("design/desktop.jpg");
+				background-size: 1100px auto;  */
+}
+
+#design-thumb {
+	width: 400PX;
+}
+
+		.file_img { 
+		display: inline-block;
+		border: 1px solid white;
+		width: auto;
+   		height: 8vh;
+		margin: 4px;
+		border:0px solid;
+    	box-shadow: 3px 3px 2px #353535;
+
+			}
+
+.member {
+display: inline-block;
+width: 90px;
+height: 50px;
+vertical-align: top;
+text-align:center;
+margin-top: 40px;
+margin-left: 20px;
+margin-bottom: 30px;
+}
+
+.name {
+    display: inline;
+}
+
+.member:hover {
+	opacity: 0.8;
+}
+
+.mfp-close {
+	margin-top: 50px; 
+}
+
+
+
+ 		.design-popup {
+			  position: relative;
+				background: url('design/window.jpg') no-repeat;
+    			background-size: 100%;
+			  background-color: #FFF;
+			  padding: 20px;
+			  width: auto;
+			  max-width: 700px;
+			  margin: 20px auto;
+			  padding-top: 35px;
+
+		}		
+
+.popuprap {
+	overflow-y: scroll;
+	height: 500px;
+	margin-top: 20px;
+}
+
+#fashionpop {
+			border: 1px solid #a3a3a3;
+
+	    	box-shadow: 4px 4px 4px #a3a3a3;
+}
+
+#fashionpop1 {
+
+	    	box-shadow: 4px 4px 4px #a3a3a3;
+}
+
 
 footer {
    position:absolute;

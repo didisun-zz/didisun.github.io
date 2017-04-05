@@ -4,16 +4,51 @@
     <meta charset="utf-8">
     <title>Hi there</title>
     	<link rel="stylesheet" href="styles.css" /> 
-	<link rel="icon" type="image/ico" href="assets/favicon.ico" />
-  <link rel="stylesheet" href="lightbox.css">
+	   <link rel="icon" type="image/ico" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
 
 
   </head>
-<body>
+<body id="design_body">
   <h3>graphic design gallery</h3>
 
 <div class="gallery-des">
-	
+	<div id="design-thumb">
+
+  <div class="member">
+       <div class="file" ><a href="#fashion" class="open-popup-link"><img src="design/fashion3.jpg" alt="fashion3.jpg" class="file_img" ></a></div>
+      <div class="name" >web_design-tlv streets
+      </div>
+</div>
+
+
+     <div class="member">
+       <div class="file" ><a href="#likepaper" class="open-popup-link"><img src="design/ux1.jpg" alt="ux1.jpg" class="file_img" ></a></div>
+      <div class="name">UX_design
+      </div>  </div>
+
+
+
+     <div class="member">
+       <div class="file" ><a href="#spycob" class="open-popup-link"><img src="design/ui7.png" alt="ux1.jpg" class="file_img" ></a></div>
+      <div class="name">UI_design
+      </div> </div>
+
+     <div class="member">
+       <div class="file" ><a href="#stationery" class="open-popup-link"><img src="design/Stationery5.png" alt="Stationery5.png" class="file_img" ></a></div>
+      <div class="name">stationery
+      </div> </div>
+
+
+     <div class="member">
+       <div class="file" ><a href="#info" class="open-popup-link"><img src="design/info1.jpg" alt="Stationery5.png" class="file_img" ></a></div>
+      <div class="name">info_graphic
+      </div> </div>
+
+
+</div>
+
+
 
 </div>
 
@@ -24,5 +59,80 @@
     <p>back to my <a href="index_2.html">room</a></p>
   </footer>
  
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="magnific-popup/jquery.magnific-popup.js"></script>
+  <script type="text/javascript">
+    
+  $(document).ready(function() {
+  
+    $('.gallery-des').magnificPopup({ delegate: 'a', type:'image'});
+  
+  });
+
+</script>
+
+<script> $('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+});
+
+</script>
+
+<!-- html popups -->
+
+<div id="fashion" class="design-popup mfp-hide">
+  <div class="popuprap">
+  <h2>TLV street vibe</h2>
+  <p class="popuptext">DoublFashion and style blog, under constructions,
+adjusted for mobile and web.
+</p>
+  <img src="design/fashion1.jpg" class="popupimga2" id="fashionpop"><br>
+  <img src="design/fashion2.jpg" class="popupimga" id="fashionpop"><br>
+  <img src="design/fashion3.jpg" class="popupimga2" id="fashionpop"><br>
+  <p class="popuptext">mobile view design</p>
+  <img src="design/fashion4.jpg" class="popupimga3" id="fashionpop">
+  <img src="design/fashion5.jpg" class="popupimga3" id="fashionpop">
+</div></div>
+
+<div id="likepaper" class="design-popup mfp-hide">
+ <div class="popuprap"><h2>I like paper</h2> 
+<p class="popuptext">A new format and add of production to the i-like-paper website ‘Product creator’,
+By adding several products, and more design options.
+the work on the website itself and the creator is still in progress. </p>
+  <img src="design/ux1.jpg" class="popupimga" ><br>
+    <img src="design/ux2.jpg" class="popupimga"><br>
+      <img src="design/ux3.jpg" class="popupimga"><br></div>
+</div>
+
+<div id="spycob" class="design-popup mfp-hide">
+<div class="popuprap">
+<h2>SpyCob, fashio app UI design</h2>
+<p class="popuptext"> Spycob is a smart fashion app, the app filter new and old seasons’ sells and outlet prices around the top USA brands,
+and help you find the best and closest match for you.
+I was part of the design and marketing develop team there made this app design idea for the app prototype </p>
+ <div class="photocenter">
+ <div class="raw raw2"><img src="design/ui1.gif" class="popupimga5" id="fashionpop">
+  <img src="design/ui2.gif" class="popupimga5" id="fashionpop"></div>
+  <div class="raw"><img src="design/ui3.gif" class="popupimga5"></div>
+  <div class="raw"><img src="design/ui4.gif" class="popupimga5"></div>
+  <div class="raw"><img src="design/ui5.png" class="popupimga"></div></div>
+</div></div>
+
+<div id="stationery" class="design-popup mfp-hide">
+<div class="popuprap">
+<h2>Stationery designs</h2>
+  <img src="design/stationery1.jpg" class="popupimga" id="fashionpop"><br>
+    <img src="design/stationery3.jpg" class="popupimga" id="fashionpop"><br>
+ </div></div>
+
+ <div id="info" class="design-popup mfp-hide">
+   <div class="popuprap">
+   <h2> Info Graphics</h2>
+   <img src="design/info1.jpg" class="popupimga" id="fashionpop1"><br>
+   <img src="design/info3.jpg" class="popupimga" id="fashionpop1"><br>
+   <img src="design/info4.jpg" class="popupimga" id="fashionpop1"><br>
+     <img src="design/info5.jpg" class="popupimga4" id="fashionpop1">
+  </div>
+ </div>
 
 </html>
